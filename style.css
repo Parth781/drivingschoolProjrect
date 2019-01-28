@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+/*navigation*/
+.navbar {
+    background-color: #0800ad !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover {
+    color: #0800ad !important;
+    background-color: #ffffff !important;
+}
+
+/*header*/
+.header {
+    height: 600px;
+    width: 100%;
+    padding: 30px 10px 0 30px;
+    margin-top: 50px;
+    background-color: #b7d3ff;
+    color: #2d2d2d;
+}
+
+.header img {
+    height: 475px;
+    width: 475px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.mybutton {
+    padding: 15px 40px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mybutton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+
+
+@media(max-width:768px) {
+    
+    .header {
+        
+        padding: 30px;
+        height: 750px;
+    }
+    
+    .header img {
+        
+        width: 90%;
+        height: 300px;
+        margin: 20px 0 0 20px;
+    }
+    
+    .header .btn {
+        
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    
+    .header h1 {
+        
+        font-size: 20px;
+    }
+    
+    .header p {
+        
+        font-size: 10px;
+    }
+}
+
+/*services*/
+.services {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.services h1 {
+    text-transform: uppercase;
+    color: #6699cc;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.services h2 {
+    font-size: 18px;
+    color: #3a3838;
+    margin: 20px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services h4 {
+    font-size: 15px;
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+
+.services p {
+    color: #737373;
+    font-size: 15px;
+    padding-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.services i {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #6699cc;
+    color: #fff;
+}
+
+/*FOOTER*/
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+
+.footer h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+}
+
+
