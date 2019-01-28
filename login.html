@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b00ff">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="user_css/login-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  </head>
+  <div class="login-form">
+    <form action="verify.php" method="POST">
+      <h1>Login</h1>
+        <input placeholder="Username" name="username" type="text" required="">
+          
+        <input placeholder="Password" name="password" type="password" required="">
+        <button class="mybutton"><span>Submit</span></button>
+        <div style="padding: 30px 74px; text-align: center;">
+          <h4><a onclick="$('#myModal').css('display', 'block');">Forgot Password?</a></h4>
+          <h4>Don't have an account? <a href="guestform.php">Sign Up</a></h4>
+        </div>
+    </form> 
+  </div>
+    
+
+    <!-- footer -->
+    <div id="about" class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-4">
+                   <h4>Contact Us</h4>
+                   <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;111 Main Street, Washington DC, 22222</p>
+                   <p><i class="fas fa-at"></i>&nbsp;&nbsp;info@drive.com</p>
+                   <p><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;+1 222 222 2222</p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                    <h4><a href="index.html">Home</a></h4>
+                    <h4><a href="index.html">Services</a></h4>
+                    <h4><a href="index.html">Testimonials</a></h4>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                   <h4>About</h4>
+                   <p>About Us</p>
+                   <p>Privacy</p>
+                   <p>Term & Condition</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end footer -->
+
+  
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3>We will send you a email which will contain a verification code</h3>
+        <form action="#" method="POST">
+          <input placeholder="Verification Code" type="text" class="form-control" name="code" required="" style="width: 20%; margin: auto; margin-top: 20px;"><br>
+          <button class="mybutton" style="margin: 10px;"><span>Confirm</span></button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- button hover -->
+    <script>
+        document.querySelector('.mybutton').onmousemove = (e) => {
+    
+        const x = e.pageX - e.target.offsetLeft
+        const y = e.pageY - e.target.offsetTop
+    
+        e.target.style.setProperty('--x', `${ x }px`)
+        e.target.style.setProperty('--y', `${ y }px`)
+    }
+  </script> 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>﻿

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, input::placeholder, button {
+  	transition: all 0.3s ease-in-out;
+}
+
+/*white box*/
+form {
+	background-color: white;
+  	box-sizing: border-box;
+  	width: 500px;
+  	height: 600px;
+  	margin: 0 auto 0;
+  	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  	padding-bottom: 40px;
+  	border-radius: 10px;
+}
+
+/*change pass text*/
+form h1 {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-left: 140px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input {
+    font-size: 17px;
+    margin: 40px 100px;
+    width: 290px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #497dff;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96.595%, #021ff9 3.405%);
+    background-position: -290px 0;
+    background-size: 290px 100%;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+input:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+
+input:focus::placeholder, input:valid::placeholder {
+    color: #021ff9;
+    font-size: 10px;
+    transform: translateY(-15.5px);
+    visibility: visible !important;
+}
+
+button {
+    border: none;
+    border-radius: 10px !important;
+    background: #fc00ce;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 16px 40px;
+    color: white;
+    margin-left: 146px;
+    margin-top: 10px !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+button span {
+	letter-spacing: 0.8px;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+form a {
+	text-decoration: none !important;
+	color: #021ff9;
+}
+
+form h4 {
+	color: #6d6d6d;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 0.7px;
+	/*padding: 57px 74px;*/
+}
+
+/*FOOTER*/
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+    margin-top: 200px;
+    margin-bottom: -20px;
+}
+
+.footer h4 , .footer a {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: #cccccc;
+}
+

@@ -1,0 +1,78 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*navigation*/
+.navbar {
+    background-color: #0800ad !important;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar a:hover {
+    color: #0800ad !important;
+    background-color: #ffffff !important;
+}
+
+/*form*/
+.myform {
+	margin-top: 70px;
+}
+
+.myform h2 {
+	text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0800ad;
+    font-weight: 540;
+    text-align: center;
+}
+
+.myform p {
+    text-align: center;
+    color: #737373;
+    line-height: 2;
+    padding-bottom: 15px;
+}
+
+.mybutton {
+    padding: 13px 40px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mybutton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+}
+
+/*FOOTER*/
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+
+.footer h1 {
+    padding-top: 5px;
+}
+
+.footer h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+}
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vehicles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+  <style> 
+  body{
+  	background-color: #5e5f60;
+  	color: white;
+  }
+  .inst {
+  	text-align: center;
+  	letter-spacing: 1.6px;
+  }
+
+  h2 {
+  	text-align: center;
+  	font-size: 21px;
+  }
+	.carousel-control-prev-icon {
+	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-control-next-icon {
+	  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 400px;
+    height: 500px ;
+    padding-bottom: 120px;
+  }
+
+  .carousel-item {
+  	cursor: pointer;
+  }
+
+  /*@media (min-width: 390px) {
+  .container{
+      max-width: 450px;
+      float: left;
+  }*/
+  .container {
+  	max-width: 440px;
+  	float: left;
+  	padding: 20px;
+  }
+
+  </style>
+  
+  <script>
+  $(document).ready(function() {
+	$("#image1").click(function() {
+		var val = $("#image1").attr('alt');
+		//alert(val);
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image2").click(function() {
+		var val = $("#image2").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image3").click(function() {
+		var val = $("#image3").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image4").click(function() {
+		var val = $("#image4").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image5").click(function() {
+		var val = $("#image5").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image6").click(function() {
+		var val = $("#image6").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image7").click(function() {
+		var val = $("#image7").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image8").click(function() {
+		var val = $("#image8").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+	$("#image9").click(function() {
+		var val = $("#image9").attr('alt');
+		$("#vehiclename").val(val);
+		$("#selectvehicle").submit();
+	});
+  });
+		
+  </script>
+  
+  
+</head>
+<body>
+
+	<div class="inst">
+		<h3>Select a vehicle by clicking on it's image</h3>
+	</div>
+
+	<form action="selectvehicle2.php" method="POST" id="selectvehicle">
+	<input type="hidden" id="vehiclename" name="vehiclename">
+	</form>
+
+	<div class="container">
+	  <h2>Sedan</h2>
+	<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+	<div id="demo1" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo1" data-slide-to="1"></li>
+	    <li data-target="#demo1" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="images/hyundai-xcent.png" alt="Hyundai Xcent" width="1100" height="500" id="image1">
+	          <div class="carousel-caption d-none d-md-block" style="color: black;">
+	        <h3>Hyundai Xcent</h3>
+	        <p>₹7,000</p>
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/ford-figo-aspire.png" alt="Ford Figo Aspire" width="1100" height="500" id="image2">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Ford Figo Aspire</h3>
+	        <p>₹9,000</p>
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/skoda-rapid.png" alt="Skoda Rapid" width="1100" height="500" id="image3">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Skoda Rapid</h3>
+	        <p>₹12,000</p>
+	      </div>   
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo1" data-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+	</div>
+
+	<div class="container">
+	  <h2>SUV</h2>
+	<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+	<div id="demo2" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo2" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo2" data-slide-to="1"></li>
+	    <li data-target="#demo2" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="images/tata-nexon.png" alt="Tata Nexon" width="1100" height="500" id="image4">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Tata Nexon</h3>
+	        <p>₹7,000</p>
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/maruti-suzuki-vitara-brezza.png" alt="Vitara Brezza" width="1100" height="500" id="image5">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Vitara Brezza</h3>
+	        <p>₹9,000</p>
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/mahindra-marazzo.png" alt="Mahindra Marazzo" width="1100" height="500" id="image6">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Mahindra Marazzo</h3>
+	        <p>₹12,000</p>
+	      </div>   
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo2" data-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+	</div>
+
+	<div class="container">
+	  <h2>Hatchback</h2>
+	<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+	<div id="demo3" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo3" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo3" data-slide-to="1"></li>
+	    <li data-target="#demo3" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="images/tata-tiago-nrg.png" alt="Maruti Suzuki Alto 800" width="1100" height="500" id="image7">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Tata Tiago NRG</h3>
+	        <p>₹7,000</p>
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/renault-kwid.png" alt="Renault Kwid" width="1100" height="500" id="image8">
+	      <div class="carousel-caption" style="color: black;">
+	        <h3>Renault Kwid</h3>
+	        <p>₹9,000</p>
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/maruti-suzuki-swift.png" alt="Maruti Suzuki Swift" width="1100" height="500" id="image9">
+	      <div class="carousel-caption" style="color: black">
+	        <h3>Maruti Suzuki Swift</h3>
+	        <p>₹12,000</p>
+	      </div>   
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo3" data-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+	</div>
+
+</body>
+</html>

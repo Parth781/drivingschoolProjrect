@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+  	padding: 0;
+}
+
+body {
+  	background: #A3C5FF;
+  	background: -webkit-linear-gradient(left, #0059ff, #00c6ff);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* instructions */
+.instructions {
+    font-family: inherit;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    padding-top: 1%;
+    text-align: center;
+    color: #e2edff;
+    letter-spacing: 1.7px;
+}
+
+/*ratings*/
+.ratings {
+    font-family: inherit;
+    padding: 1px 0 80px;
+    text-align: center;
+}
+
+.card {
+	height: 27em;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+	cursor: pointer;
+	background: #47ff50;
+	transform: scale(1.13);
+	box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 17px;
+    padding-top: 20px;
+    color: black;
+    letter-spacing: 1.3px;
+    padding-bottom: 10px;
+}
+
+.card p {
+	font-size: 15px;
+	padding-top: 10px;
+
+}
+
+.card i {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #113dff;
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+
+.card i:hover {
+	background: #378eff;
+}
+
+.card .completed i {
+	margin-left: 70px;
+	height: 55px;
+	width: 55px;
+	padding: 12px;
+	background-color: #00ff11;
+}
+
+
+
+#label {
+    margin-top: 10%;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+#label p {
+    margin-bottom: 30px;
+}
+
+#check {
+    margin-top: 20px;
+}
+
+#check i {
+    padding-left: 10%;
+    width: 30px;
+    height: 30px;
+    color: green;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: #fc00ce;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 16px 40px;
+    color: white;
+    margin-left: 32%;
+    margin-top: 27px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+button span {
+	letter-spacing: 0.8px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* The Modal (background) */
+.modal {
+    display: hidden; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top and also top of bootstrap navbar*/
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-doc {
+    font-family: inherit;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    margin: auto;
+    padding: 20px 0px;
+    border: 1px solid #888;
+    border-radius: 25px;
+    width: 36%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-content-doc input {
+    margin-left: 20%;
+}
+
+.modal-content-doc .upload {
+    border-radius: 50%;
+    /*padding: 20px;*/
+    color: black;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
